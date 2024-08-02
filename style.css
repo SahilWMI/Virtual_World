@@ -6,3 +6,6 @@ h1 {
     color: white;
     font-family: Arial;
 }
+#myCanvas {
+    background-color: hsl(133, 97%, 42%);
+}
