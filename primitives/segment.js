@@ -4,7 +4,7 @@ class Segment {
         this.p2 = p2;
     }
     draw(ctx, width = 2, color = "black") {
-        ctx.beginpath();
+        ctx.beginPath();
         ctx.lineWidth = width;
         ctx.strokeStyle = color;
         ctx.moveTo(this.p1.x, this.p1.y);
