@@ -17,6 +17,17 @@
     <script src="primitives/point.js"></script>
     <script src="primitives/segment.js"></script>
     <script>
+
+        function addRandonPoint() {
+            graph.adPoint(
+                new Point(
+                    Math.random() * myCanvas.width,
+                    Math.random() * myCanvas.height
+                )
+            );
+            
+        }
+
         myCanvas.width = 600;
         myCanvas.height = 600;
 
