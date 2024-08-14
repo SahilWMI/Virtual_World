@@ -9,7 +9,15 @@ class Graph{
     }
 
     containsPoint(point){
-        return this.points.find((P) => p.equals(point));
+        return this.points.find((P) => P.equals(point));
+    }
+
+    tryAddPoint(point) {
+        if (!this.containsPoint(point)) {
+            this.addPoint(point);
+            return true;
+        }
+        return false;
     }
 
     draw(ctx) {
