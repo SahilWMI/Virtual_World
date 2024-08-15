@@ -24,6 +24,13 @@ class Graph{
         this.segments.push(seg);
     }
 
+    tryAddSegment(seg) {
+        if (!this.constainsSegment(seg)) {
+            this.addSegment(seg);
+            return true;
+        }
+    }
+
     draw(ctx) {
         for (const seg of this.segments) {
             seg.draw(ctx);
