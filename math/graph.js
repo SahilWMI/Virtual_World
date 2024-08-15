@@ -24,6 +24,10 @@ class Graph{
         this.segments.push(seg);
     }
 
+    constainsSegment(seg){
+        return this.segments.find((s) => s.equals(seg));
+    }
+
     tryAddSegment(seg) {
         if (!this.constainsSegment(seg)) {
             this.addSegment(seg);
