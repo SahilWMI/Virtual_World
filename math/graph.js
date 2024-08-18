@@ -21,7 +21,7 @@ class Graph{
     }
 
     removePoint(point) {
-        const segs = this.getSegmentsWithPoint(points);
+        const segs = this.getSegmentsWithPoint(point);
         for(const seg of segs) {
             this.removeSegment(seg);
         }
@@ -55,6 +55,7 @@ class Graph{
                 segs.push(seg);
             }
         }
+        return segs;
     }
 
     draw(ctx) {
